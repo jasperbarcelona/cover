@@ -1,0 +1,86 @@
+@font-face
+	{
+		font-family: Lato;
+		src:url('../fonts/lato.woff2');
+	}
+
+html,body{
+	height: 100hv;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	color: #696969;
+}
+
+p{
+	font-size: 16px;
+	font-weight: 300;
+	text-align: justify;
+}
+
+.page{
+	height: 100%;
+	width: 100%;
+}
+
+.half{
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.heading{
+	font-weight: 300;
+	font-size: 32px;
+	display: block;
+}
+
+#contact{
+	background-color: #01B7BE;
+	color: #FFFFFF;
+	height: 50px;
+	width: 300px;
+	font-size: 18px;
+}
+
+#page1-left{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#page1-right{
+	padding-top: 90px !important;
+	padding-left: 0 !important;
+}
+
+#page1-pic-container{
+	width: 100%;
+	background: url('../images/assets/imac.png');
+	background-size: 100% 100%;
+}
+
+#page1{
+	color: #FFFFFF;
+	background: url('../images/assets/c21.jpg');
+	background-size: 100% 100%;
+}
+
+#page2{
+	background: -moz-linear-gradient(left, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 89%, rgba(226,226,226,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(254,254,254,1)), color-stop(89%, rgba(226,226,226,1)), color-stop(100%, rgba(226,226,226,1)));
+	background: -webkit-linear-gradient(left, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 89%, rgba(226,226,226,1) 100%);
+	background: -o-linear-gradient(left, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 89%, rgba(226,226,226,1) 100%);
+	background: -ms-linear-gradient(left, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 89%, rgba(226,226,226,1) 100%);
+	background: linear-gradient(to right, rgba(254,254,254,1) 0%, rgba(226,226,226,1) 89%, rgba(226,226,226,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e2e2', GradientType=1 );
+}
