@@ -20,4 +20,4 @@ def favicon():
 
 if __name__ == '__main__':
     app.debug = True
-    app.run(port=int(os.environ['PORT']), host='0.0.0.0')
+    app.run(port = 9000)

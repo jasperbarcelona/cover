@@ -20,12 +20,14 @@ $(window).resize(function() {
 });
 
 $(window).on('scroll', function(){
-    st = $('body').scrollTop();
-    if(st >= 200){
-        $("#floating-header").css("top","0");
-    }
-    else if (st<200){
-        $("#floating-header").css("top","-80px");
+    if (document.documentElement.clientWidth > 1000){
+        st = $('body').scrollTop();
+        if(st >= 200){
+            $("#floating-header").css("top","0");
+        }
+        else if (st<200){
+            $("#floating-header").css("top","-80px");
+        }
     }
 });
 
@@ -47,7 +49,7 @@ function onScrollInit( items, trigger ) {
         osElement.addClass('animated').addClass(osAnimationClass);
     },{
         triggerOnce: true,
-        offset: '90%'
+        offset: '50%'
     });
   });
 }
