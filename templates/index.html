@@ -7,51 +7,78 @@
         <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="../static/css/bootstrap-theme.css.map">
         <link rel="stylesheet" href="../static/css/animate.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+        <link rel="stylesheet" href="../static/css/icon.css">
         <link rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 768px)" href="../static/css/xs.css">
-        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1100px)" href="../static/css/medium.css">
-		<link rel="stylesheet" media="screen and (min-width: 1100px) and (max-width: 1500px)" href="../static/css/style.css">
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1100px)" href="../static/css/small.css">
+		<link rel="stylesheet" media="screen and (min-width: 1100px) and (max-width: 1500px)" href="../static/css/medium.css">
         <title>Appname</title>
 	</head>
 	<body>
-		<div id="floating-header">
+		<div id="floatingHeader">
 			<div id="left-floating-header" class="headerfloat">
-				<img src="../static/images/assets/logo_white.png">
-				<span id="floating-brand">CleverCloud</span>
 			</div>
 			<div id="right-floating-header" class="headerfloat">
-				<a href="http://127.0.0.1:5000/signin">
-				<button type="button" class="btn" id="floating-sign-in-btn">SIGN IN</button>
-				</a>
-				<span id="sched-demo" class="floating-nav-opt">CONTACT US</span>
-			</div>
-		</div>
-		<div class="page" id="page1">
-			<div id="left-header" class="header">
-				<img src="../static/images/assets/logo.png">
-				<span id="brand">CleverCloud</span>
-			</div>
-			<div id="right-header" class="header">
-				<a href="http://127.0.0.1:5000/signin">
-				<button type="button" class="btn" id="sign-in-btn">SIGN IN</button>
-				</a>
-				<span id="sched-demo" class="nav-opt">CONTACT US</span>
-			</div>
-			<div class="half col-md-6 col-sm-6 col-xs-12" id="page1-left">
-				<div class="text-container">
-					<span class="heading">Student attendance</span>
-					<span class="heading">Straight from the cloud</span>
-					<br />
-					<p>
-						Productname is a cloud-based attendance monitoring system that lets you focus more on delivering quality education while it keeps track of your attendance for you.
-					</p>
-					<br />
-					<button type="button" class='btn' id="contact" onclick="show_form()">ASK FOR DEMO</button>
+				<div class="nav-container">
+					<div>
+						<span class="homeNav floating-nav-opt active">Home</span>
+						<span class="aboutNav floating-nav-opt">About</span>
+						<span class="featuresNav floating-nav-opt">Features</span>
+						<span class="contactNav floating-nav-opt">Contact</span>
+					</div>
 				</div>
 			</div>
-			<div class="half col-md-6 col-sm-6" id="page1-right">
+		</div>
+		<div id="whiteHeader">
+			<div id="left-white-header" class="headerfloat">
+				<div>
+					<div id="logo-container">
+						<div class="inner-container">
+							<div class="eraser"></div>
+						</div>
+					</div>
+					
+					<div class="text-container">
+						P i s a r a
+					</div>
+				</div>
+			</div>
+			<div id="right-white-header" class="headerfloat">
+				<div class="nav-container">
+					<div>
+						<span class="homeNav white-nav-opt active">Home</span>
+						<span class="aboutNav white-nav-opt">About</span>
+						<span class="featuresNav white-nav-opt">Features</span>
+						<span class="contactNav white-nav-opt">Contact</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="blue-overlay"></div>
+		<div class="page" id="page1"></div>
+		<div class="page1-content">
+			<div class="half col-sm-7 col-xs-12" id="page1-left">
+				<div class="banner-text-container">
+					<div>
+						<div class="banner-logo">
+							<div id="banner-logo-container">
+								<div class="banner-inner-container">
+									<div class="banner-eraser"></div>
+								</div>
+							</div>
+							
+							<div class="banner-logo-text-container">
+								P i s a r a
+							</div>
+						</div>
+						<span class="banner-desc">
+							School campus innovation in a box.
+						</span>
+						<button type="button" class='btn' id="contact" onclick="show_form()">Ask for demo</button>
+						<button type="button" class='btn' id="learn" onclick="show_form()">Learn more</button>
+					</div>
+				</div>
+			</div>
+			<div class="half col-sm-5" id="page1-right">
 				<div id="page1-pic-container"></div>
 				<div id="demo-form-container">
 					<center>
