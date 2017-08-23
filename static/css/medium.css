@@ -14,10 +14,12 @@ html,body{
 }
 
 body{
+	opacity: 1;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	color: #696969;
 	background-color: #FFFFFF;
+	transition: 1s opacity;
 }
 
 a{
@@ -310,12 +312,13 @@ a{
 
 #left-white-header > div{
 	padding: 0;
+	height: 100%;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-direction: row;
 	flex-direction: row;
 	-webkit-align-items: center;
-	align-items: left;
+	align-items: center;
 	-webkit-justify-content: left;
 }
 
@@ -382,7 +385,7 @@ a{
 	height: 60px;
 	width: 100%;
 	background-color: #FFFFFF;
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid #ddd;
 	display: none;
 }
 
@@ -702,11 +705,11 @@ a{
 #banner-logo-container {
 	position: relative;
 	float: left;
+	margin-top: 2px;
 	height: 56px;
-	width: 76px;
+	width: 85px;
 	overflow: hidden;
 	background-color: transparent;
-	/*border: 1px solid #01B9C8;*/
 }
 
 .banner-logo-text-container{
@@ -715,7 +718,6 @@ a{
 	font-size: 54px;
 	text-transform: uppercase;
 	padding-left: 10px;
-	padding-top: 15px;
 	color: #fff;
 }
 
@@ -746,8 +748,8 @@ a{
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	height: 90%;
-	width: 88%;
+	height: 100%;
+	width: 100%;
 	border: 3px solid #337AB7;
 	border-bottom: none !important;
 }
@@ -776,7 +778,7 @@ a{
 
 .banner-eraser{
 	position: absolute;
-	bottom: 0;
+	bottom: 1px;
 	right: 6px;
 	width: 22px;
 	height: 4px;
